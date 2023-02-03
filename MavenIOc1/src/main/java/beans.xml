@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean id="airtel" class="com.black.MavenIOc1.Airtel">
+		<!-- <property name="SchmId" value="12"></property>
+		<property name="SchmName" value="Airtel New!"></property>
+ -->
+ <constructor-arg><value>20</value></constructor-arg>
+  <constructor-arg><value>Airtel Black magic...!</value></constructor-arg>
+ 
+	</bean>
+	<bean id="jio" class="com.black.MavenIOc1.Jio">
+
+	</bean>
+	<bean id="common" class="com.black.MavenIOc1.CommonClass">
+	<property name="network" ref="airtel"></property></bean>
+
+</beans>  
